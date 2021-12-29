@@ -1,0 +1,10 @@
+br/ufrn/smartSecuritySpring/controller/IncidentController.class
+br/ufrn/smartSecuritySpring/service/IncidentService.class
+br/ufrn/smartSecuritySpring/controller/PoliceLocationController.class
+br/ufrn/smartSecuritySpring/SmartSecuritySpringApplication.class
+br/ufrn/smartSecuritySpring/model/enums/PortPool.class
+br/ufrn/smartSecuritySpring/service/PoliceLocationService.class
+br/ufrn/smartSecuritySpring/repository/SmartSecurityConfig.class
+br/ufrn/smartSecuritySpring/repository/SmartSecurityRepository.class
+br/ufrn/smartSecuritySpring/model/PoliceLocation.class
+br/ufrn/smartSecuritySpring/model/Incident.class
