@@ -1,0 +1,30 @@
+resilience4j.circuitbreaker:
+	instances:
+		smart-security-beta-server:
+			registerHealthIndicator: true
+			ringBufferSizeInClosedState: 5
+			ringBufferSizeInHalfOpenState: 3
+			waitDurationInOpenState: 10s
+			failureRateThreshold: 5
+			recordExceptions:
+				- org.springframework.web.client.HttpServerErrorException
+				- java.io.IOException
+				- java.lang.IllegalStateException
+				- java.util.concurrent.TimeoutException
+				- org.springframework.web.client.ResourceAccessException
+				- java.lang.RuntimeException
+
+resilience4j.bulkhead:
+	instances:
+		bulkhead-smart-security-beta-server:
+			maxWaitDuration: 2ms
+			maxConcurrentCalls: 20
+			
+resilience4j.retry:
+	instances:
+		retry-smart-security-beta-server:
+			maxRetryAttempts: 5
+			waitDuration: 10000
+			retry-exceptions:
+				- java.util.concurrent.TimeoutException
+				- java.net.ConnectException
