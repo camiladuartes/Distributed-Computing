@@ -9,8 +9,10 @@ This project was developed in a university subject called Distributed Computing,
 2. Development, still in Java, but using Spring framework to take care of the infrastructure and add patternization to the project. Spring Boot, Spring Web MVC and Spring Data JPA for the data manipulation with the PostgreSQL database were the Spring enviromnent frameworks used.
 
 3. Still using Spring frameworks, but splitting the project into two microservices: one for PoliceLocation (Beta1) and another for Incident (Beta2), using Resilience4j. In addition to the use of services: Alpha (working as a Load Balancer), Discovery (to register the services), Gateway (so that the system is not blocked) and Zipkin (for tracing the distributed system).
- 
+  
  Here are some specifications and examples for SmartSecurity v3:
+ 
+ <img src="https://user-images.githubusercontent.com/44905597/153313616-1e25ee0e-2d9b-44f1-8a5f-12ec752326e3.jpeg" width="300" height="300" />
  
  URLS:
 1. Config: http://localhost:8888/limits-service/dev
